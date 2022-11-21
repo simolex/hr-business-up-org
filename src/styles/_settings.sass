@@ -3,24 +3,59 @@
   &::after, &::before
     box-sizing: border-box
 
-// body
-//   color: $primary
-//   background-color: $secondary
-//   font-family: 'Roboto', sans-serif
-//   font-style: normal
-//   font-size: 62.5%
-//   font-weight: 400
-//   @include scrollbars(1rem, 0.4rem, $footer-text-color, $secondary)
+@font-face
+  font-family: 'Akrobat'
+  src: url('../fonts/Akrobat-Regular.eot')
+  src: local('Akrobat Regular'), local('Akrobat-Regular'),
+		url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Akrobat-Regular.woff') format('woff'),
+		url('../fonts/Akrobat-Regular.ttf') format('truetype')
+  font-weight: 500
+  font-style: normal
+  font-display: swap
 
-// a
-//   text-decoration: none
+@font-face
+  font-family: 'Akrobat'
+  src: url('../fonts/Akrobat-SemiBold.eot')
+  src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'),url('../fonts/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Akrobat-SemiBold.woff') format('woff'),url('../fonts/Akrobat-SemiBold.ttf') format('truetype')
+  font-weight: 600
+  font-style: normal
+  font-display: swap
 
-// a, input
-//   color: inherit
+@font-face
+  font-family: 'Akrobat'
+  src: url('../fonts/Akrobat-Bold.eot')
+  src: local('Akrobat Bold'), local('Akrobat-Bold'),url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/Akrobat-Bold.woff') format('woff'),url('../fonts/Akrobat-Bold.ttf') format('truetype')
+  font-weight: 700
+  font-style: normal
+  font-display: swap
 
-// .container
-//   max-width: 1440px
-//   margin: auto
+@font-face
+  font-family: 'Akrobat'
+  src: url('../fonts/Akrobat-ExtraBold.eot')
+  src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'),url('../fonts/Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Akrobat-ExtraBold.woff') format('woff'),url('../fonts/Akrobat-ExtraBold.ttf') format('truetype')
+  font-weight: 800
+  font-style: normal
+  font-display: swap
 
-// img
-//   max-width: 100%
+body
+  color: $primary
+  background-color: $secondary
+  font-family: 'Akrobat', sans-serif
+  font-style: normal
+  font-size: 62.5%
+  font-weight: 500
+  @include scrollbars(1rem, 0.4rem, $footer-text-color, $secondary)
+
+a
+  text-decoration: none
+
+a, input
+  color: inherit
+
+.container
+  max-width: 1040px
+  margin: 0 auto
+
+img
+  max-width: 100%
