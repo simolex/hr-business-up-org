@@ -1,0 +1,49 @@
+.hero
+  position: relative
+  background-color: rgba($secondary , 0.47)
+  width: 100%
+  height: 100vh
+  &::before
+    content: ""
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    position: absolute
+    z-index: -1
+    background-image:   url("../img/hero-bg.png")
+    background-repeat: no-repeat
+    background-size: cover
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+  &__center
+    display: flex
+    align-items: start
+    justify-content: space-between
+  &__wrapper
+    padding: 0 47px 0 50px
+    padding-top: 235px
+  &__title
+    font-weight: 700
+    font-size: 84px
+    line-height: .95
+    text-transform: uppercase
+    &--strong
+      font-weight: 800
+  &__subtitle
+    font-weight: 800
+    font-size: 24px
+    line-height: 150%
+  &__description
+    font-weight: 500
+    font-size: 24px
+    line-height: 133% 
+  &__advantage
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 140px
+    background-color:  rgba(#ffffff,.17)
+.advantage
+  display: flex
+  padding: 0 47px 0 50px

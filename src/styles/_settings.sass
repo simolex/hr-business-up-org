@@ -2,48 +2,40 @@
   box-sizing: border-box
   &::after, &::before
     box-sizing: border-box
+@font-face 
+    font-family: 'Akrobat';
+    src: local('Akrobat'), local('Akrobat-Regular'), url('../fonts/Akrobat.woff2') format('woff2'), url('../fonts/Akrobat.woff') format('woff'), url('../fonts/Akrobat.ttf') format('truetype')
+    font-weight: 500
+    font-style: normal
+    font-display: swap
 
-@font-face
-  font-family: 'Akrobat'
-  src: url('../fonts/Akrobat-Regular.eot')
-  src: local('Akrobat Regular'), local('Akrobat-Regular'),
-		url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Akrobat-Regular.woff') format('woff'),
-		url('../fonts/Akrobat-Regular.ttf') format('truetype')
-  font-weight: 500
-  font-style: normal
-  font-display: swap
+@font-face 
+    font-family: 'Akrobat'
+    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'), url('../fonts/Akrobatsemibold.woff2') format('woff2'), url('../fonts/Akrobatsemibold.woff') format('woff'), url('../fonts/Akrobatsemibold.ttf') format('truetype')
+    font-weight: 600
+    font-style: normal
+    font-display: swap
 
-@font-face
-  font-family: 'Akrobat'
-  src: url('../fonts/Akrobat-SemiBold.eot')
-  src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'),url('../fonts/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Akrobat-SemiBold.woff') format('woff'),url('../fonts/Akrobat-SemiBold.ttf') format('truetype')
-  font-weight: 600
-  font-style: normal
-  font-display: swap
+@font-face 
+    font-family: 'Akrobat'
+    src: local('Akrobat Bold'), local('Akrobat-Bold'), url('../fonts/Akrobatbold.woff2') format('woff2'), url('../fonts/Akrobatbold.woff') format('woff'), url('../fonts/Akrobatbold.ttf') format('truetype')
+    font-weight: 700
+    font-style: normal
+    font-display: swap
 
-@font-face
-  font-family: 'Akrobat'
-  src: url('../fonts/Akrobat-Bold.eot')
-  src: local('Akrobat Bold'), local('Akrobat-Bold'),url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/Akrobat-Bold.woff') format('woff'),url('../fonts/Akrobat-Bold.ttf') format('truetype')
-  font-weight: 700
-  font-style: normal
-  font-display: swap
+@font-face 
+    font-family: 'Akrobat'
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url('../fonts/Akrobatextrabold.woff2') format('woff2'), url('../fonts/Akrobatextrabold.woff') format('woff'), url('../fonts/Akrobatextrabold.ttf') format('truetype')
+    font-weight: 800
+    font-style: normal
+    font-display: swap
 
-@font-face
-  font-family: 'Akrobat'
-  src: url('../fonts/Akrobat-ExtraBold.eot')
-  src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'),url('../fonts/Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype'),url('../fonts/Akrobat-ExtraBold.woff') format('woff'),url('../fonts/Akrobat-ExtraBold.ttf') format('truetype')
-  font-weight: 800
-  font-style: normal
-  font-display: swap
 
 body
   color: $primary
-  background-color: $secondary
+  //background-color: $secondary
   font-family: 'Akrobat', sans-serif
   font-style: normal
-  font-size: 62.5%
   font-weight: 500
   @include scrollbars(1rem, 0.4rem, $footer-text-color, $secondary)
 

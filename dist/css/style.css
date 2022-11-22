@@ -353,8 +353,7 @@ template {
 
 @font-face {
   font-family: 'Akrobat';
-  src: url("../fonts/Akrobat-Regular.eot");
-  src: local("Akrobat Regular"), local("Akrobat-Regular"), url("../fonts/Akrobat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Akrobat-Regular.woff") format("woff"), url("../fonts/Akrobat-Regular.ttf") format("truetype");
+  src: local("Akrobat"), local("Akrobat-Regular"), url("../fonts/Akrobat.woff2") format("woff2"), url("../fonts/Akrobat.woff") format("woff"), url("../fonts/Akrobat.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -362,8 +361,7 @@ template {
 
 @font-face {
   font-family: 'Akrobat';
-  src: url("../fonts/Akrobat-SemiBold.eot");
-  src: local("Akrobat SemiBold"), local("Akrobat-SemiBold"), url("../fonts/Akrobat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Akrobat-SemiBold.woff") format("woff"), url("../fonts/Akrobat-SemiBold.ttf") format("truetype");
+  src: local("Akrobat SemiBold"), local("Akrobat-SemiBold"), url("../fonts/Akrobatsemibold.woff2") format("woff2"), url("../fonts/Akrobatsemibold.woff") format("woff"), url("../fonts/Akrobatsemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -371,8 +369,7 @@ template {
 
 @font-face {
   font-family: 'Akrobat';
-  src: url("../fonts/Akrobat-Bold.eot");
-  src: local("Akrobat Bold"), local("Akrobat-Bold"), url("../fonts/Akrobat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Akrobat-Bold.woff") format("woff"), url("../fonts/Akrobat-Bold.ttf") format("truetype");
+  src: local("Akrobat Bold"), local("Akrobat-Bold"), url("../fonts/Akrobatbold.woff2") format("woff2"), url("../fonts/Akrobatbold.woff") format("woff"), url("../fonts/Akrobatbold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -380,8 +377,7 @@ template {
 
 @font-face {
   font-family: 'Akrobat';
-  src: url("../fonts/Akrobat-ExtraBold.eot");
-  src: local("Akrobat ExtraBold"), local("Akrobat-ExtraBold"), url("../fonts/Akrobat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Akrobat-ExtraBold.woff") format("woff"), url("../fonts/Akrobat-ExtraBold.ttf") format("truetype");
+  src: local("Akrobat ExtraBold"), local("Akrobat-ExtraBold"), url("../fonts/Akrobatextrabold.woff2") format("woff2"), url("../fonts/Akrobatextrabold.woff") format("woff"), url("../fonts/Akrobatextrabold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -389,10 +385,8 @@ template {
 
 body {
   color: #FFFFFF;
-  background-color: #010F29;
   font-family: 'Akrobat', sans-serif;
   font-style: normal;
-  font-size: 62.5%;
   font-weight: 500;
 }
 
@@ -436,6 +430,13 @@ img {
   max-width: 100%;
 }
 
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .header__wrapper {
   padding: 51px;
 }
@@ -463,5 +464,83 @@ img {
   line-height: 2;
   letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+  background-color: rgba(1, 15, 41, 0.47);
+  width: 100%;
+  height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.hero__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__wrapper {
+  padding: 0 47px 0 50px;
+  padding-top: 235px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 84px;
+  line-height: .95;
+  text-transform: uppercase;
+}
+
+.hero__title--strong {
+  font-weight: 800;
+}
+
+.hero__subtitle {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.hero__description {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+}
+
+.hero__advantage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.17);
+}
+
+.advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 47px 0 50px;
 }
 /*# sourceMappingURL=style.css.map */
