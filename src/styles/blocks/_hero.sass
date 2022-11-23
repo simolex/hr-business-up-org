@@ -48,6 +48,11 @@
     bottom: 0
     height: 140px
     background-color: rgba(#ffffff,.17)
+  &__message
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 24.7%
 .advantage
   padding: 0 47px 0 50px
   display: flex
@@ -77,3 +82,18 @@
     border-radius: 50%
     background-color: rgba(#fff ,.06 )
     mix-blend-mode: normal
+
+.message-box
+  height: 1.5em
+  word-break: keep-all
+  white-space: nowrap
+  overflow: hidden
+  color: $primary
+  font-weight: 700
+  font-size: 114px
+  line-height: 1.5
+  text-transform: uppercase
+  mix-blend-mode: normal
+  opacity: 0.1
+  &__content
+    transform: translateX(-8.6%)

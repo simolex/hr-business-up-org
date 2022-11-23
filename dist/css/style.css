@@ -546,6 +546,13 @@ img {
   background-color: rgba(255, 255, 255, 0.17);
 }
 
+.hero__message {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24.7%;
+}
+
 .advantage {
   padding: 0 47px 0 50px;
   display: -webkit-box;
@@ -598,5 +605,24 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.06);
   mix-blend-mode: normal;
+}
+
+.message-box {
+  height: 1.5em;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 114px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+
+.message-box__content {
+  -webkit-transform: translateX(-8.6%);
+          transform: translateX(-8.6%);
 }
 /*# sourceMappingURL=style.css.map */
