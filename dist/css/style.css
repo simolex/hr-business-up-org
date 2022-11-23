@@ -391,17 +391,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 1rem;
-  height: 1rem;
+  width: 10px;
+  height: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #BDBDBD;
-  border-radius: 0.4rem;
+  background: #010F29;
+  border-radius: 4px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #010F29;
+  background: #FFFFFF;
 }
 
 body::-webkit-scrollbar-button {
@@ -409,8 +409,8 @@ body::-webkit-scrollbar-button {
 }
 
 body body {
-  scrollbar-face-color: #BDBDBD;
-  scrollbar-track-color: #010F29;
+  scrollbar-face-color: #010F29;
+  scrollbar-track-color: #FFFFFF;
 }
 
 a {
@@ -432,7 +432,6 @@ img {
 
 .button {
   border-color: transparent;
-  background-color: transparent;
   outline: none;
 }
 
@@ -501,9 +500,6 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .hero__wrapper {
@@ -517,6 +513,11 @@ img {
   line-height: .95;
   text-transform: uppercase;
   margin: 0 0 34px;
+}
+
+.hero__title-wrap {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
 .hero__title--strong {
@@ -551,6 +552,7 @@ img {
   left: 0;
   right: 0;
   bottom: 24.7%;
+  z-index: -1;
 }
 
 .advantage {
@@ -573,7 +575,7 @@ img {
 
 .advantage__group--bottons {
   width: auto;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .advantage__item {
@@ -605,6 +607,31 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.06);
   mix-blend-mode: normal;
+}
+
+.advantage__request {
+  min-height: 61px;
+  min-width: 200px;
+  background: linear-gradient(143.05deg, #FCA82D 20.13%, #EFC449 85.02%);
+  border-radius: 30.5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 60%;
+  -webkit-transform: translateX(-6%);
+          transform: translateX(-6%);
+  top: -113%;
 }
 
 .message-box {

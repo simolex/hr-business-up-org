@@ -18,7 +18,7 @@
   &__center
     display: flex
     align-items: start
-    justify-content: space-between
+    // justify-content: space-between
   &__wrapper
     padding: 0 47px 0 50px
     padding-top: 235px
@@ -28,6 +28,8 @@
     line-height: .95
     text-transform: uppercase
     margin: 0 0 34px
+    &-wrap
+      flex-basis: 60%
     &--strong
       font-weight: 800
 
@@ -53,6 +55,7 @@
     left: 0
     right: 0
     bottom: 24.7%
+    z-index: -1
 .advantage
   padding: 0 47px 0 50px
   display: flex
@@ -64,7 +67,7 @@
     width: 300px
     &--bottons
       width: auto
-      margin-left: 50px
+      margin-left: 70px
   &__item
     width: 100%
     display: flex
@@ -82,6 +85,22 @@
     border-radius: 50%
     background-color: rgba(#fff ,.06 )
     mix-blend-mode: normal
+  &__request
+    min-height: 61px
+    min-width: 200px
+    background: linear-gradient(143.05deg, #FCA82D 20.13%, #EFC449 85.02%)
+    border-radius: 30.5px
+    font-weight: 700
+    font-size: 16px
+    line-height: 2
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    left: 60%
+    transform: translateX(-6%)
+    top: -113%
 
 .message-box
   height: 1.5em
