@@ -4,7 +4,7 @@
       &--bottons
         width: auto
         margin-left: 70px
-  
+
 @media( max-width: 1200px)
   .container
     max-width: 960px
@@ -24,10 +24,12 @@
       &-wrap
         margin-right: 60px
     &__description
-      font-size: 18px
+      font-size: 20px
     &__advantage
-        height: auto
-        background-color: transparent
+      height: auto
+      background-color: transparent
+    &__message
+      bottom: 39%
   .advantage
     flex-direction: column
     padding: 0
@@ -43,14 +45,70 @@
       position: static
       width: 50%
       transform: translateX(0)
+  .message-box
+    font-size: 94px
 @media  ( max-width: 767px )
   .container
     max-width: 576px
     width: 90%
+  .header
+    display: none
+  .hero
+    height: auto
+    &__wrapper
+      height: 792px
+      padding-top: 103px
+    &__center
+      flex-direction: column
+      justify-content: space-between
+      height: 100%
+    &__title
+      margin-bottom: 17px
+    &__description
+      margin-bottom: 20px
+    &__message
+      bottom: 55%
+
+    &__advantage
+      position: static
+      max-width: auto
+      width: 100%
+  .advantage
+    &__group
+      margin-bottom: 20px
+      &--bottons
+        margin-bottom: 53px
 
 @media ( max-width: 576px )
-   .container
-      min-width: 280px
-  
-
-
+  .container
+    min-width: 280px
+  .advantage
+    &__group
+      &--bottons
+        margin-bottom: 107px
+  .hero
+    &__message
+      bottom: 58%
+    &__subtitle
+      padding-left: 8px
+  .message-box
+    font-size: 72px
+@media (max-width: 428px)
+  .hero
+    &__title
+      font-size: 60px
+    &__description
+      margin-bottom: 14px
+  .advantage
+    &__group
+      margin-bottom: 17px
+      padding-right: 8px
+      &--bottons
+        margin-top: 27px
+        margin-bottom: 107px
+    &__request
+      width: 77%
+      margin-left: 8px
+  .message-box
+    &__content
+      transform: translateX(-27.6%)

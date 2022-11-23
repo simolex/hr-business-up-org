@@ -681,11 +681,14 @@ img {
     margin-right: 60px;
   }
   .hero__description {
-    font-size: 18px;
+    font-size: 20px;
   }
   .hero__advantage {
     height: auto;
     background-color: transparent;
+  }
+  .hero__message {
+    bottom: 39%;
   }
   .advantage {
     -webkit-box-orient: vertical;
@@ -716,6 +719,9 @@ img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  .message-box {
+    font-size: 94px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -723,11 +729,88 @@ img {
     max-width: 576px;
     width: 90%;
   }
+  .header {
+    display: none;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero__wrapper {
+    height: 792px;
+    padding-top: 103px;
+  }
+  .hero__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+  .hero__title {
+    margin-bottom: 17px;
+  }
+  .hero__description {
+    margin-bottom: 20px;
+  }
+  .hero__message {
+    bottom: 55%;
+  }
+  .hero__advantage {
+    position: static;
+    max-width: auto;
+    width: 100%;
+  }
+  .advantage__group {
+    margin-bottom: 20px;
+  }
+  .advantage__group--bottons {
+    margin-bottom: 53px;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     min-width: 280px;
+  }
+  .advantage__group--bottons {
+    margin-bottom: 107px;
+  }
+  .hero__message {
+    bottom: 58%;
+  }
+  .hero__subtitle {
+    padding-left: 8px;
+  }
+  .message-box {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 428px) {
+  .hero__title {
+    font-size: 60px;
+  }
+  .hero__description {
+    margin-bottom: 14px;
+  }
+  .advantage__group {
+    margin-bottom: 17px;
+    padding-right: 8px;
+  }
+  .advantage__group--bottons {
+    margin-top: 27px;
+    margin-bottom: 107px;
+  }
+  .advantage__request {
+    width: 77%;
+    margin-left: 8px;
+  }
+  .message-box__content {
+    -webkit-transform: translateX(-27.6%);
+            transform: translateX(-27.6%);
   }
 }
 /*# sourceMappingURL=style.css.map */
