@@ -396,21 +396,24 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #010F29;
+  background: #EAA654;
   border-radius: 4px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: #010F29;
 }
 
 body::-webkit-scrollbar-button {
   cursor: pointer;
+  background: #010F29;
+  width: 10px;
+  height: 10px;
 }
 
 body body {
-  scrollbar-face-color: #010F29;
-  scrollbar-track-color: #FFFFFF;
+  scrollbar-face-color: #EAA654;
+  scrollbar-track-color: #010F29;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -725,6 +728,69 @@ img {
 
 .afraid__item--strong {
   font-weight: 700;
+}
+
+.afraid__panel {
+  z-index: 0;
+}
+
+.panel {
+  width: 100%;
+  height: 138px;
+  overflow: hidden;
+}
+
+.panel__container {
+  position: relative;
+  height: 100%;
+}
+
+.panel__wrapper {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.panel__button {
+  display: block;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(138.91deg, rgba(0, 21, 177, 0.2) 23.29%, rgba(195, 2, 213, 0.2) 88.99%);
+  margin-right: 17px;
+}
+
+.panel__line {
+  height: 0.1px;
+  width: 100vw;
+  padding: 0;
+  border: none;
+  border-top: 2px solid transparent;
+  -o-border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+     border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+  -webkit-border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+  border-image-slice: 1;
 }
 
 @media (min-width: 993px) {
