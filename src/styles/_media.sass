@@ -8,6 +8,12 @@
 @media( max-width: 1200px)
   .container
     max-width: 960px
+  .afraid
+    &__list
+      padding: 60px 36px 0
+    &__item
+      font-size: 22px
+
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -47,6 +53,11 @@
       transform: translateX(0)
   .message-box
     font-size: 94px
+  .afraid
+    &__list
+      padding: 60px 0 0
+    &__item
+      font-size: 20px
 @media  ( max-width: 767px )
   .container
     max-width: 576px
@@ -78,10 +89,37 @@
       margin-bottom: 20px
       &--bottons
         margin-bottom: 53px
+  .afraid
+    &__picture
+      padding: 40px 38px
+      flex-direction: column-reverse
+      align-items: start
+    &__title
+      font-size: 56px
+      line-height: 1
+    &__item
+      width: 100%
+      line-height: 1.67
+      margin: 0
+      margin-bottom: 30px
+      &--order-hi
+        order: 1
+    &__list
+      padding: 41px 38px 0
+      &-wrap
+        flex-direction: column
+        margin: 0 0 -30px
+  .panel
+    &__wrapper
+      left: calc(calc((100% - 100vw)/2) + 5px)
 
+    &__button
+      display: none
 @media ( max-width: 576px )
   .container
     min-width: 280px
+    &--afraid
+      width: 100%
   .advantage
     &__group
       &--bottons
@@ -93,6 +131,9 @@
       padding-left: 8px
   .message-box
     font-size: 72px
+  .afraid
+    &__title
+      font-size: 40px
 @media (max-width: 428px)
   .hero
     &__title
@@ -112,3 +153,12 @@
   .message-box
     &__content
       transform: translateX(-27.6%)
+  .afraid
+    &__item
+      font-size: 18px
+  .panel
+    height: 94px
+    &__wrapper
+      top: 46%
+      right: calc((100% - 100vw)/2)
+      left: calc((100% - 100vw)/2)
