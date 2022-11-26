@@ -721,7 +721,7 @@ img {
 .afraid__item {
   font-weight: 500;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 1.5;
   margin: 0 8px;
   width: calc(50% - 16px);
 }
@@ -805,6 +805,12 @@ img {
   .container {
     max-width: 960px;
   }
+  .afraid__list {
+    padding: 60px 36px 0;
+  }
+  .afraid__item {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -868,6 +874,12 @@ img {
   .message-box {
     font-size: 94px;
   }
+  .afraid__list {
+    padding: 60px 0 0;
+  }
+  .afraid__item {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -915,11 +927,55 @@ img {
   .advantage__group--bottons {
     margin-bottom: 53px;
   }
+  .afraid__picture {
+    padding: 40px 38px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .afraid__title {
+    font-size: 56px;
+    line-height: 1;
+  }
+  .afraid__item {
+    width: 100%;
+    line-height: 1.67;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .afraid__item--order-hi {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .afraid__list {
+    padding: 41px 38px 0;
+  }
+  .afraid__list-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 -30px;
+  }
+  .panel__wrapper {
+    left: calc(calc((100% - 100vw)/2) + 5px);
+  }
+  .panel__button {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     min-width: 280px;
+  }
+  .container--afraid {
+    width: 100%;
   }
   .advantage__group--bottons {
     margin-bottom: 107px;
@@ -932,6 +988,9 @@ img {
   }
   .message-box {
     font-size: 72px;
+  }
+  .afraid__title {
+    font-size: 40px;
   }
 }
 
@@ -957,6 +1016,17 @@ img {
   .message-box__content {
     -webkit-transform: translateX(-27.6%);
             transform: translateX(-27.6%);
+  }
+  .afraid__item {
+    font-size: 18px;
+  }
+  .panel {
+    height: 94px;
+  }
+  .panel__wrapper {
+    top: 46%;
+    right: calc((100% - 100vw)/2);
+    left: calc((100% - 100vw)/2);
   }
 }
 /*# sourceMappingURL=style.css.map */
