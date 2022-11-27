@@ -1,1 +1,80 @@
 .challenge
+   background-color: $secondary
+   color: $text-color
+
+   &__wrapper
+      display: grid
+      grid-template-columns: repeat(2,1fr)
+      grid-auto-rows: minmax(200px, min-content)
+   &__title
+      color: $primary
+
+      grid-column: 1/span 1
+      grid-row: 1/span 1
+   &__subtitle
+      font-weight: 500
+      font-size: 24px
+      line-height: 1.5
+
+      grid-column: 1/span 1
+      grid-row: 2/span 2
+   &__picture
+      grid-column: 2/span 1
+      grid-row: 1/span 2
+   &__description
+      font-weight: 500
+      font-size: 24px
+      line-height: 1.5
+
+      grid-column: 2/span 1
+      grid-row: 3/span 1
+   &__term
+      background: linear-gradient(143.05deg, #EAA853 20.13%, #984860 85.02%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-clip: text
+      text-fill-color: transparent
+
+      grid-column: 1/span 1
+      grid-row: 4/span 1
+   &__tag-list
+      grid-column: 2/span 1
+      grid-row: 4/span 1
+   &__panel
+      display: flex
+      align-items: center
+      justify-content: center
+
+      align-self: center
+      grid-column: 1/span 2
+      grid-row: 5/span 1
+   &__from
+      grid-column: 1/span 2
+      grid-row: 6/span 1
+   &__step
+      grid-column: 1/span 2
+      grid-row: 7/span 1
+   &__educator
+      grid-column: 1/span 2
+      grid-row: 8/span 1
+.term
+   display: flex
+   flex-direction: column
+   align-items: center
+   padding: 0 116px 0 65px
+
+   &__line
+      font-weight: 500
+      &--style
+         &-1
+            align-self: start
+         &-2
+            align-self: end
+            font-weight: 700
+.tag-list
+   font-weight: 500
+   font-size: 36px
+   line-height: 1.17
+   &__item:not(:last-child)
+
+      margin-bottom: 1em

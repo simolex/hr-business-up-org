@@ -31,12 +31,18 @@
   font-display: swap
 
 body
+  margin: 0
   color: $primary
   //background-color: $secondary
   font-family: 'Akrobat', sans-serif
   font-style: normal
   font-weight: 500
   @include scrollbars($scroll-size, $scroll-size-half, $gradient-3,  $secondary )
+  position: relative
+  z-index: -10
+main
+  position: relative
+  z-index: -10
 
 h1,h2,h3,h4,h5,h6
   margin: 0
@@ -68,3 +74,9 @@ img
   height: 64px
   border-radius: 50%
   background: linear-gradient(138.91deg, rgba(#0015B1, .2) 23.29%,rgba( #C302D5,.2) 88.99%)
+  cursor: pointer
+.title
+  font-weight: 700
+  font-size: 64px
+  line-height: .94
+  text-transform: uppercase
