@@ -1157,6 +1157,15 @@ img {
   padding-left: 11px;
 }
 
+.partner {
+  padding-top: 108px;
+  background-color: #010F29;
+}
+
+.partner__title {
+  font-size: 54px;
+}
+
 @media (min-width: 993px) {
   .advantage__group--bottons {
     width: auto;
