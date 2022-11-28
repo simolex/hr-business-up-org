@@ -1110,6 +1110,53 @@ img {
   line-height: 1.4;
 }
 
+.educator {
+  border: 1px solid #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 15px;
+  padding: 73px 90px 42px 45px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.educator__profile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.educator__avatar {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+  margin-right: 86px;
+}
+
+.educator__name {
+  font-weight: 700;
+}
+
+.educator__skills {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding-left: 11px;
+}
+
 @media (min-width: 993px) {
   .advantage__group--bottons {
     width: auto;
