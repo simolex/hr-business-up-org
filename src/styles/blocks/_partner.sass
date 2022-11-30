@@ -3,3 +3,62 @@
   background-color: $secondary
   &__title
     font-size: 54px
+    margin-bottom: 28px
+
+.leader
+  &__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 1.17
+    margin-bottom: 27px
+  &__subtitle
+    font-weight: 500
+    font-size: 24px
+    line-height: 1.5
+    padding: 28px 45px
+    &-wrap
+      display: flex
+      align-items: start
+      margin: -9px
+  &__description
+    margin: 9px
+    width: calc(50% - 18px)
+  &__promo
+    margin: 9px
+    width: calc(50% - 18px)
+  &__companies
+    margin: 0
+    margin-left: 0
+.promo
+  padding-left: 0
+  list-style: none
+  font-weight: 500
+  font-size: 24px
+  line-height: 1.5
+  &__count
+    font-weight: 700
+  &__item:not(:last-child)
+    margin-bottom: 1em
+.company
+  display: flex
+  align-items: start
+  flex-wrap: wrap
+  list-style: none
+  font-weight: 500
+  font-size: 16px
+  line-height: 1.5
+  &__logo
+    background: linear-gradient(143.05deg, rgba(#EAA853,0.78) 20.13%, rgba(#984860, 0.78) 85.02%)
+    border-radius: 50%
+    width: 108px
+    height: 108px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__image
+    width: calc(100% - 8px)
+    height: calc(100% - 8px)
+    border-radius: 50%
+    overflow: hidden
+  &__subscribers
+    font-weight: 700
