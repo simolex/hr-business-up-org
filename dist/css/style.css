@@ -1207,7 +1207,7 @@ img {
 
 .leader__companies {
   margin: 0;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .promo {
@@ -1226,6 +1226,10 @@ img {
   margin-bottom: 1em;
 }
 
+.commercial__company {
+  padding-left: 0;
+}
+
 .company {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1239,6 +1243,22 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  margin: -10px;
+}
+
+.company__item {
+  width: calc( 100% / 6.01 - 20px);
+  margin: 10px;
+}
+
+.company__item--end {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .company__logo {

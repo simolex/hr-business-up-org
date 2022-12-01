@@ -28,7 +28,8 @@
     width: calc(50% - 18px)
   &__companies
     margin: 0
-    margin-left: 0
+    padding-left: 0
+
 .promo
   padding-left: 0
   list-style: none
@@ -39,6 +40,10 @@
     font-weight: 700
   &__item:not(:last-child)
     margin-bottom: 1em
+.commercial
+  &__company
+    // margin: 0
+    padding-left: 0
 .company
   display: flex
   align-items: start
@@ -47,6 +52,16 @@
   font-weight: 500
   font-size: 16px
   line-height: 1.5
+  margin: -10px
+  &__item
+    width: calc( 100% / 6.01 - 20px )
+    margin: 10px
+    &--end
+      align-self: center
+      width: auto
+      font-weight: 700
+      font-size: 36px
+      line-height: 42px
   &__logo
     background: linear-gradient(143.05deg, rgba(#EAA853,0.78) 20.13%, rgba(#984860, 0.78) 85.02%)
     border-radius: 50%
