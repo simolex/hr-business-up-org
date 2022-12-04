@@ -837,8 +837,6 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(200px, -webkit-min-content);
-  grid-auto-rows: minmax(200px, min-content);
   gap: 25px 20px;
   position: relative;
 }
@@ -855,7 +853,7 @@ img {
 }
 
 .challenge__subtitle {
-  padding: 20px 0 0 64px;
+  padding: 40px 0 0 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
@@ -863,8 +861,8 @@ img {
   -ms-grid-column-span: 1;
   grid-column: 1/span 1;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/span 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/span 1;
 }
 
 .challenge__picture {
@@ -902,7 +900,7 @@ img {
 }
 
 .challenge__description {
-  padding: 12px 35px 0 15px;
+  padding: 50px 35px 0 15px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
@@ -915,7 +913,7 @@ img {
 }
 
 .challenge__term {
-  margin-top: 124px;
+  margin-top: 166px;
   background-image: linear-gradient(143.05deg, #EAA853 20.13%, #984860 85.02%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -933,7 +931,7 @@ img {
 }
 
 .challenge__tag-list {
-  margin-top: 122px;
+  margin-top: 164px;
   padding-left: 15px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -953,8 +951,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 55px;
-  padding-left: 70px;
+  padding: 40px 0 42px 70px;
   -ms-flex-item-align: center;
       align-self: center;
   -ms-grid-column: 1;
@@ -979,6 +976,8 @@ img {
 }
 
 .challenge__step {
+  padding: 50px;
+  margin-top: 125px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/span 2;
@@ -988,6 +987,7 @@ img {
 }
 
 .challenge__educator {
+  margin: 111px 16px 0;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/span 2;
@@ -1041,6 +1041,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 3px;
 }
 
 .from__title {
@@ -1049,7 +1050,7 @@ img {
 
 .from__item {
   margin-left: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1.59em;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.6;
@@ -1059,26 +1060,27 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  padding: 49px 90px 0 45px;
+  padding: 49px 90px 22px 45px;
   margin: 0;
+  border: 1px solid #FFFFFF;
 }
 
 .from__you {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  padding: 49px 65px 0 45px;
+  padding: 49px 65px 22px 38px;
   margin: 0;
+  border: 1px solid #FFFFFF;
 }
 
 .step {
-  margin: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 190px;
-  gap: 17px 20px;
+  gap: 18px 20px;
 }
 
 .step__title {
@@ -1119,6 +1121,10 @@ img {
           justify-content: end;
 }
 
+.step__icon--num-4 {
+  right: 2px;
+}
+
 .step__content {
   font-weight: 500;
   font-size: 20px;
@@ -1130,8 +1136,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 15px;
-  padding: 73px 90px 42px 45px;
+  padding: 73px 90px 74px 40px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -1139,8 +1144,8 @@ img {
 
 .educator__profile {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+      -ms-flex: 1 0 53%;
+          flex: 1 0 53%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,6 +1155,7 @@ img {
 }
 
 .educator__avatar {
+  min-width: 145px;
   width: 145px;
   height: 145px;
   border-radius: 50%;
@@ -1167,8 +1173,8 @@ img {
 
 .educator__skills {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+      -ms-flex: 1 0 47%;
+          flex: 1 0 47%;
   padding-left: 11px;
 }
 
