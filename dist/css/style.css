@@ -776,6 +776,7 @@ img {
 
 .afraid__item--strong {
   font-weight: 700;
+  margin: 0;
 }
 
 .afraid__panel {
@@ -942,6 +943,10 @@ img {
 }
 
 .challenge__panel {
+  position: absolute;
+  left: calc(calc(100% - 100vw) / 2 + 5px);
+  right: 28.4%;
+  top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,8 +956,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0 42px 70px;
+  padding: 40px 0 42px;
+}
+
+.challenge__panel-wrap {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -960,9 +969,24 @@ img {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/span 1;
+  position: relative;
+  height: 148px;
+}
+
+.challenge__line {
+  height: 0.1px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-top: 2px solid transparent;
+  -o-border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+     border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+  -webkit-border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+  border-image-slice: 2;
 }
 
 .challenge__button {
+  margin-left: 25px;
   margin-right: 115px;
 }
 
@@ -1179,6 +1203,7 @@ img {
 }
 
 .partner {
+  display: none;
   padding-top: 108px;
   background-color: #010F29;
 }
@@ -1322,6 +1347,9 @@ img {
   .afraid__item {
     font-size: 22px;
   }
+  .challenge__term {
+    padding: 0 60px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1390,6 +1418,9 @@ img {
   }
   .afraid__item {
     font-size: 20px;
+  }
+  .challenge__term {
+    padding: 0 20px;
   }
 }
 

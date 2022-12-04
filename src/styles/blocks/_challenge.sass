@@ -73,16 +73,31 @@
       grid-column: 2/span 1
       grid-row: 4/span 1
    &__panel
+      position: absolute
+      left: calc(calc(100% - 100vw) / 2 + 5px)
+      right: 28.4%
+      top: 3px
       display: flex
       align-items: center
       justify-content: center
-      padding: 40px 0 42px 70px
-
-      align-self: center
-      grid-column: 1/span 2
-      grid-row: 5/span 1
+      padding: 40px 0 42px
+      &-wrap
+         align-self: center
+         grid-column: 1/span 2
+         grid-row: 5/span 1
+         position: relative
+         height: 148px
+   &__line
+      height: 0.1px
+      width: 100%
+      padding: 0
+      border: none
+      border-top: 2px solid transparent
+      border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%)
+      -webkit-border-image: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%)
+      border-image-slice: 2
    &__button
-
+      margin-left: 25px
       margin-right: 115px
    &__from
       grid-column: 1/span 2
